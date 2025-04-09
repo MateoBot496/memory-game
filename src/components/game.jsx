@@ -169,7 +169,7 @@ export default function Game({difficulty}){
         return(
             <div className="game column" >
                 <div>Ronda {rondaActual} / {rondas}</div>
-                <div className='row'>
+                <div className='gameboard'>
                     {            
                     roundNumbers.map((rng,i) => {
                         return <Card key = {i} text={numeros[rng]} handleNumerosSeleccionados={handleNumerosSeleccionados}/>

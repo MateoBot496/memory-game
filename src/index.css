@@ -115,6 +115,13 @@ button:focus-visible {
   align-items: center;
   flex-direction: column;
 }
+
+.gameboard{
+  max-width: 60%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 100px);
+  gap: 2vh;
+}
 /*CARTAS*/
 
 .game{
@@ -192,4 +199,30 @@ button:focus-visible {
 .lose {
   color: red;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Para tablets en vertical o móviles grandes */
+@media (max-width: 1000px) {
+  .descripcion{
+    width: max(60%, 500px);
+  }
+
+}
+
+@media (max-width: 650px) {
+  .difficulty{
+    flex-direction: column;
+  }
+
+  .descripcion{
+    width: max(90%, 380px);
+  }
+
+  .header{
+    padding: 2vh;
+  }
+  .title{
+    font-size: 40px;
+  }
 }
