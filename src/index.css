@@ -166,6 +166,14 @@ button:focus-visible {
   gap: 2vh;
 }
 
+.descripcion{
+  width: max(60%, 1000px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 300;
+}
 /*MENSAJE FINAL */
 
 .mensajefinal {

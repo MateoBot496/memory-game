@@ -149,7 +149,17 @@ export default function Game({difficulty}){
 
     if(estado == "inicio"){
         return(
-            <div style={{marginTop: "2vh"}}> Choose a difficulty </div>
+            <>
+            <div className='column gap'>
+                    <div style={{marginTop: "2vh"}}> Choose a difficulty </div>
+                        <p className='descripcion'>
+                        The goal of the game is to remember and select a sequence of numbers shown in each round. As you progress, the number of rounds and difficulty increase. You must avoid selecting a repeated number to win!
+                        </p>
+            </div>
+                
+            </>
+            
+
         )
     }
 
